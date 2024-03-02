@@ -3,6 +3,7 @@ import {BsBell, BsBookmark, BsEnvelope, BsTwitter} from 'react-icons/bs'
 import React from "react";
 import { BiHash, BiHomeCircle, BiUser } from "react-icons/bi";
 import FeedCard from "@/components/FeedCard/page";
+import { SlOptions } from "react-icons/sl";
 
 
 interface TwitterSidebarButton {
@@ -35,6 +36,10 @@ const SidebarMenuItems : TwitterSidebarButton[] = [
     title: "Profile",
     icon: <BiUser /> 
   },
+  {
+    title: "More",
+    icon: <SlOptions /> 
+  },
   
   
   
@@ -61,10 +66,11 @@ export default function Home() {
           <button className="bg-[#1d9bf0] text-sm p-3 rounded-full w-full mt-5">Tweet</button>
        </div> 
        </div>
-
+  
   
        <div className="col-span-6 border-r-2 border-l-2 border-slate-500 ">
         <FeedCard  />
+        
        </div>
        <div className="col-span-3"></div>
     </div>
